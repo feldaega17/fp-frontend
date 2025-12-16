@@ -381,7 +381,7 @@ export default function MyTasksPage() {
                                             <div className="flex justify-between items-start gap-3">
                                                 <div className="flex-1 min-w-0">
                                                     <Link
-                                                        to={`/tasks/${task.id}`}
+                                                        to={`/dashboard/tasks/${task.id}`}
                                                         className={`font-bold text-base mb-1 block hover:text-indigo-600 transition-colors ${task.status === 'COMPLETED' ? 'line-through text-slate-400' : 'text-slate-800'
                                                             }`}
                                                     >
@@ -454,7 +454,7 @@ export default function MyTasksPage() {
 
                                             <div className="flex gap-2 pt-3 border-t border-slate-100">
                                                 <Link
-                                                    to={`/tasks/${task.id}`}
+                                                    to={`/dashboard/tasks/${task.id}`}
                                                     className="flex-1 flex items-center justify-center gap-1.5 bg-indigo-100 hover:bg-indigo-200 text-indigo-700 px-3 py-2 rounded-xl text-xs font-semibold transition-all"
                                                 >
                                                     👁️ View

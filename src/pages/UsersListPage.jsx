@@ -144,7 +144,7 @@ export default function UsersListPage() {
                                     </div>
                                 </div>
                                 <button
-                                    onClick={() => navigate(`/users/${user.id}/public-tasks`)}
+                                    onClick={() => navigate(`/dashboard/users/${user.id}/public-tasks`)}
                                     className="bg-gradient-to-r from-indigo-600 to-purple-600 
                                      /* GANTI WARNA BACKGROUND HOVER */
                                     hover:bg-white hover:from-white hover:to-white 

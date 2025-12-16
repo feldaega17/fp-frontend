@@ -67,7 +67,7 @@ export default function PublicTasksPage() {
                     <span className="text-xl">❌</span>
                     <p>{error}</p>
                     <button
-                        onClick={() => navigate('/users')}
+                        onClick={() => navigate('/dashboard/users')}
                         className="ml-auto bg-red-100 hover:bg-red-200 text-red-700 px-4 py-2 rounded-xl text-sm font-medium transition-all"
                     >
                         Go Back
@@ -95,7 +95,7 @@ export default function PublicTasksPage() {
                                     </div>
                                 </div>
                                 <button
-                                    onClick={() => navigate('/users')}
+                                    onClick={() => navigate('/dashboard/users')}
                                     className="bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white px-5 py-2.5 rounded-xl text-sm font-medium transition-all
                                         flex items-center gap-2 border border-white/20"
                                 >

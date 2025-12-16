@@ -168,8 +168,10 @@ export default function MyTasksPage() {
         return ['jpg', 'jpeg', 'png', 'gif', 'webp'].includes(ext);
     };
 
+    // Mengambil URL attachment sesuai environment (localhost / production)
     const getAttachmentUrl = (filename) => {
-        return `http://localhost:3000/uploads/${filename}`;
+        if (!filename) return '';
+        return `${import.meta.env.VITE_API_URL}/uploads/${filename}`;
     };
 
     return (

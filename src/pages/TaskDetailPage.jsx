@@ -149,7 +149,11 @@ export default function TaskDetailPage() {
         return ['jpg', 'jpeg', 'png', 'gif', 'webp'].includes(ext);
     };
 
-    const getAttachmentUrl = (filename) => `http://localhost:3000/uploads/${filename}`;
+    const getAttachmentUrl = (filename) => {
+        if (!filename) return '';
+        return `${import.meta.env.VITE_API_URL}/uploads/${filename}`;
+    };
+
 
     const formatDate = (dateString) => {
         if (!dateString) return 'Not set';
